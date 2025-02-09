@@ -12,6 +12,7 @@ pandas = ">=2.2.3,<3.0.0"
 matplotlib = ">=3.10.0,<4.0.0"
 numpy = ">=2.2.2,<3.0.0"
 networkx = "^3.4.2"
+ipython = "^8.32.0"
 
 [tool.poetry.group.dev.dependencies]
 ipykernel = "^6.29.5"
