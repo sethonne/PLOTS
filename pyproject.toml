@@ -1,19 +1,20 @@
-[project]
+[tool.poetry]
 name = "plots"
 version = "0.1.0"
 description = ""
-authors = [
-    {name = "Samuel-Bonghanoy",email = "20103261@usc.edu.ph"}
-]
+authors = ["Samuel-Bonghanoy <20103261@usc.edu.ph>"]
 readme = "README.md"
-requires-python = ">=3.10"
-dependencies = [
-    "pandas (>=2.2.3,<3.0.0)",
-    "matplotlib (>=3.10.0,<4.0.0)",
-    "numpy (>=2.2.2,<3.0.0)"
-]
+package-mode = false
 
+[tool.poetry.dependencies]
+python = ">=3.10,<4.0"
+pandas = ">=2.2.3,<3.0.0"
+matplotlib = ">=3.10.0,<4.0.0"
+numpy = ">=2.2.2,<3.0.0"
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.29.5"
 
 [build-system]
-requires = ["poetry-core>=2.0.0,<3.0.0"]
+requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
